@@ -32,7 +32,7 @@ const Navbar = () => {
         <motion.h1
           whileHover={{
             scale: 1.1,
-            color: '#dd22cc',
+            color: '#9922ff',
             transition: {
               duration: 0.3,
               yoyo: Infinity,
