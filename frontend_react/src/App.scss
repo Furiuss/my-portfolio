@@ -1,5 +1,6 @@
 .app {
-  background-color: var(--primary-color);
+  background-color: var(--black-color);
+  color: var(--white-color);
   font-family: var(--font-base);
 }
 
@@ -54,7 +55,6 @@
   font-size: 2.75rem;
   font-weight: 800;
   text-align: center;
-  color: var(--black-color);
   text-transform: capitalize;
 
   span {

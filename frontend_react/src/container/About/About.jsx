@@ -1,10 +1,20 @@
-import React from 'react'
-import './About.scss'
+import React, { useState, useEffect } from "react";
+import { motion } from "framer-motion";
+
+import "./About.scss";
 
 const About = () => {
   return (
-    <div>About</div>
-  )
-}
+    <>
+      <h2 className="head-text">
+        I Know That
+        <span>Good Design</span>
+        <br />
+        means
+        <span>Good Business</span>
+      </h2>
+    </>
+  );
+};
 
-export default About
+export default About;
