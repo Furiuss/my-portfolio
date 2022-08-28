@@ -6,9 +6,9 @@ import "./About.scss";
 
 const abouts = [
   {title: 'Web Development', description: 'I am a good web developer.', imgUrl: images.about01},
-  {title: 'Web Development', description: 'I am a good web developer.', imgUrl: images.about02},
-  {title: 'Web Development', description: 'I am a good web developer.', imgUrl: images.about03},
-  {title: 'Web Development', description: 'I am a good web developer.', imgUrl: images.about04}
+  {title: 'Frontend Development', description: 'I am a good frontend developer.', imgUrl: images.about02},
+  {title: 'Backend Development', description: 'I am a good backend developer.', imgUrl: images.about03},
+  {title: 'MERN Stack', description: 'I am good using MERN stack.', imgUrl: images.about04}
 ]
 
 const About = () => {
@@ -16,10 +16,10 @@ const About = () => {
     <>
       <h2 className="head-text">
         I Know That
-        <span>Good Design</span>
+        <span> Good Apps</span>
         <br />
         means
-        <span>Good Business</span>
+        <span> Good Business</span>
       </h2>
 
       <div className="app__profiles">
@@ -36,7 +36,7 @@ const About = () => {
               {about.title}
             </h2>
             <p className="p-text" style={{marginTop: 20}}>
-              {about.title}
+              {about.description}
             </p>
           </motion.div>
         ))}
