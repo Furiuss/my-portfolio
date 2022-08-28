@@ -1,6 +1,6 @@
 #home {
   position: relative;
-  background: url("../../assets/bgIMG.png");
+  background: url("../../assets/banner-bg.png");
   background-size: cover;
   background-position: center;
   background-repeat: repeat;
@@ -18,13 +18,17 @@
 .app__header {
   flex: 1;
   width: 100%;
-  max-height: 100vh;
+  height: 100%;
   flex-direction: row;
 
   padding: 6rem 2rem 0rem;
 
   @media screen and (min-width: 2000px) {
     padding-top: 8rem;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-height: 100vh;
   }
 
   @media screen and (max-width: 1200px) {

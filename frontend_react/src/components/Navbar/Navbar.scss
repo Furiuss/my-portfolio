@@ -1,3 +1,7 @@
+nav {
+  transition: .2s;
+}
+
 .app__navbar {
   width: 100%;
 
@@ -5,12 +9,14 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background: rgba(204, 7, 248, 0.1);
-  backdrop-filter: blur(4px);
-  --webkit-backdrop-filter: blur(4px);
-  border: 1px solid rgba(255, 255, 255, 0.18);
   position: fixed;
   z-index: 2;
+}
+
+.scrolled {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  background-color: #121212;
 }
 
 .app__navbar-logo {
@@ -19,7 +25,7 @@
   align-items: center;
 
   h1 {
-    color: var(--alter-primary-color);
+    color: white;
     font-size: 40px;
     cursor: pointer;
     padding: 10px;
@@ -56,18 +62,19 @@
       flex-direction: column;
 
       text-transform: uppercase;
+      font-size: 16px;
       font-weight: 500;
 
       transition: 0.3s ease-in-out;
 
       &:hover {
-        color: #dd22cc;
+        color: var(--alter-primary-color);
       }
     }
 
     &:hover {
       div {
-        background-color: #dd22cc;
+        background-color: var(--alter-primary-color);
       }
     }
   }
@@ -112,7 +119,7 @@
     flex-direction: column;
 
     background: url("../../assets/bgWhite.png");
-    background-color: var(--white-color);
+    background-color: #141414;
     background-size: cover;
     background-repeat: repeat;
 
@@ -142,7 +149,7 @@
       }
 
       a {
-        color: var(--gray-color);
+        color: var(--white-color);
         text-decoration: none;
         font-size: 1rem;
         text-transform: uppercase;
