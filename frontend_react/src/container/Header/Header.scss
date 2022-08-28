@@ -1,0 +1,16 @@
+#home {
+  position: relative;
+  background: url('../../assets/bgImg.png');
+  background-size: cover;
+  background-repeat: repeat;
+  background-position: center;
+
+  .app__wrapper {
+    padding: 0;
+
+    .copyright {
+      display: none;
+    }
+  }
+}
+
