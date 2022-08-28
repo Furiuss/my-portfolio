@@ -17,7 +17,6 @@ const Navbar = () => {
         <motion.h1
           whileHover={{
             scale: 1.1,
-            textShadow: "8px 8px 8px #0099ff",
             transition: {
               duration: 0.3,
               yoyo: Infinity,
