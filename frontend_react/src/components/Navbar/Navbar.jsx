@@ -7,9 +7,21 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
 
   return (
-    <nav className="app__navbar">
+    <motion.nav
+      initial={{ y: '-100vw' }}
+      animate={{ y: 0 }}
+      transition={{type: 'spring', stiffness: 120}}
+      className="app__navbar"
+    >
       <div className="app__navbar-logo">
-        <h1>ANDRÉ</h1>
+        <motion.h1
+          whileHover={{
+            scale: 1.1,
+            textShadow: "0px 0px 8px #0099ff",
+          }}
+        >
+          ANDRÉ
+        </motion.h1>
       </div>
       <ul className="app__navbar-links">
         {["home", "about", "contact", "work", "skills", "testemonial"].map(
@@ -27,17 +39,23 @@ const Navbar = () => {
 
         {toggle && (
           <motion.div
-            whileInView={{ x: [300, 0] }}
-            transition={{ duration: 0.85, ease: "easeOut" }}
+            initial={{ x: '100vw' }}
+            animate={{ x: 0 }}
+            transition={{ type: 'spring', stiffness: 120 }}
           >
             <HiX onClick={() => setToggle(false)} />
             <ul>
-            {["home", "about", "contact", "work", "skills", "testemonial"].map(
-              (item) => (
+              {[
+                "home",
+                "about",
+                "contact",
+                "work",
+                "skills",
+                "testemonial",
+              ].map((item) => (
                 <li key={item}>
-                  <a 
-                    href={`#${item}`} 
-                    onClick={() => setToggle(false)}>{item}
+                  <a href={`#${item}`} onClick={() => setToggle(false)}>
+                    {item}
                   </a>
                 </li>
               ))}
@@ -45,7 +63,7 @@ const Navbar = () => {
           </motion.div>
         )}
       </div>
-    </nav>
+    </motion.nav>
   );
 };
 
