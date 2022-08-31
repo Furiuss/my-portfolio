@@ -1,5 +1,5 @@
 # André - Portfolio
-![André](src/assets/screenshot.png)
+![André](frontend_react/src/assets/screenshot.png)
 
 ## Introduction
 This is my personal portfolio's code.
