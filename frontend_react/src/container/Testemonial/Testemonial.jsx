@@ -1,10 +1,8 @@
-import React from 'react'
-import './Testemonial.scss'
+import React from 'react';
+import './Testemonial.scss';
 
-const Testemonial = () => {
-  return (
-    <div>Testemonial</div>
-  )
-}
+const Testemonial = () => (
+  <div>Testemonial</div>
+);
 
-export default Testemonial
+export default Testemonial;

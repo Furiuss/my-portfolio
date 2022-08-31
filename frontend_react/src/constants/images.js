@@ -70,5 +70,5 @@ export default {
   nb,
   skype,
   spotify,
-  kamina
+  kamina,
 };
