@@ -93,7 +93,7 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--secondary-color);
+  background-color: var(--alter-primary-color);
 
   svg {
     width: 70%;
@@ -128,7 +128,7 @@ nav {
     svg {
       width: 35px;
       height: 35px;
-      color: var(--secondary-color);
+      color: var(--alter-primary-color);
       margin: 0.5rem 1rem;
     }
 
@@ -158,7 +158,7 @@ nav {
         transition: 0.3s ease-in-out;
 
         &:hover {
-          color: var(--secondary-color);
+          color: var(--alter-primary-color);
         }
       }
     }
