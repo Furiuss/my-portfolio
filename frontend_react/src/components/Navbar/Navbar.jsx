@@ -38,7 +38,7 @@ const Navbar = () => {
             },
           }}
         >
-          ANDRÉ
+          An <span>D.</span> Ré
         </motion.h1>
       </div>
       <ul className="app__navbar-links">
