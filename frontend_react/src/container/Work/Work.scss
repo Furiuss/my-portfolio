@@ -25,7 +25,7 @@
     margin: 0.5rem;
 
     &:hover {
-      background-color: var(--secondary-color);
+      background-color: var(--alter-primary-color);
       color: #fff;
     }
 
@@ -36,7 +36,7 @@
   }
 
   .item-active {
-    background-color: var(--secondary-color);
+    background-color: var(--alter-primary-color);
     color: #fff;
   }
 }
