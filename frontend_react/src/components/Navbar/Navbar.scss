@@ -2,6 +2,10 @@ nav {
   transition: .2s;
 }
 
+span {
+  color: var(--alter-primary-color)
+}
+
 .app__navbar {
   width: 100%;
 
@@ -25,7 +29,7 @@ nav {
   align-items: center;
 
   h1 {
-    color: var(--alter-primary-color);
+    color: var(--white-color);
     font-size: 40px;
     cursor: pointer;
     padding: 10px;
