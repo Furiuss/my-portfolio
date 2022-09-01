@@ -4,8 +4,9 @@
   font-family: var(--font-base);
 }
 
-.app__whitebg {
-  background-color: var(--white-color);
+.app__gradientbg {
+  background-color: #020102;
+  background-image: linear-gradient(225deg, #020102 0%, #180c1d 50%, #1b2831 100%);
 }
 
 .app__primarybg {
