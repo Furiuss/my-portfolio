@@ -59,11 +59,11 @@ const Navbar = () => {
           <motion.div
             initial={{ x: '100vw' }}
             animate={{ x: 0 }}
-            transition={{ type: 'spring', stiffness: 120 }}
+            transition={{ ease: 'easeOut', duration: 0.3 }}
           >
             <HiX onClick={() => setToggle(false)} />
             <ul>
-              {['home', 'about', 'work', 'skills', 'testemonial', 'contact'].map((item) => (
+              {['home', 'about', 'work', 'skills', 'contact'].map((item) => (
                 <li key={item}>
                   <a href={`#${item}`} onClick={() => setToggle(false)}>
                     {item}
